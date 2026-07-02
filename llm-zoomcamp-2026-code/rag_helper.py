@@ -1,3 +1,7 @@
+from ingest import load_faq_data, build_index
+
+documents = load_faq_data()
+index = build_index(documents)
 
 INSTRUCTIONS = """
 Your task is to answer questions from the course participants
@@ -88,3 +92,5 @@ class RAGBase:
         prompt = self.build_prompt(query, search_results)
         answer = self.llm(prompt)
         return answer
+    
+

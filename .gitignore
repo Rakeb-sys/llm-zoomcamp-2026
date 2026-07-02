@@ -4,3 +4,6 @@ faq.db*
 *.db
 *.db-shm
 *.db_wal
+venv/
+*.pyc
+__pycache__/
